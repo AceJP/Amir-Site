@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amir's Titanic Quest</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .yes {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .no {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>AMIR IS TRYING TO GET TITANIC, WOULD YOU HELP HIM?</h1>
+    <div class="buttons">
+        <button class="yes" onclick="yesAction()">YES</button>
+        <button class="no" onclick="noAction()">NO</button>
+    </div>
+
+    <script>
+        function yesAction() {
+            document.body.innerHTML = '<h1>THANK YOU HERE IS MY USER: THEWEEKND2341</h1>';
+        }
+
+        function noAction() {
+            window.close();
+        }
+    </script>
+</body>
+</html>
